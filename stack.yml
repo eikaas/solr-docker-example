@@ -1,0 +1,13 @@
+version: '3'
+services:
+  solr:
+    image: solr:${SOLR_VERSION}
+    container_name: ${SOLR_CONTAINER_NAME}
+    ports:
+      - "${SOLR_ADDR}:8983"
+    volumes:
+      - ${SOLR_DATA_DIR}:/opt/solr/server/solr/${SOLR_CORE}
+    entrypoint:
+      - docker-entrypoint.sh
+      - solr-precreate
+      - ${SOLR_CORE}
