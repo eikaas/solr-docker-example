@@ -6,6 +6,14 @@ systemctl enable docker
 systemctl start docker
 systemctl status docker
 ```
+
+### Install docker-compose
+```bash
+yum -y install epel-release
+yum install python-pip --enablerepo=epel
+pip install docker-compose
+```
+
 #### Access the docker daemon as a normal user
 (You will need to re-log for this to have an effect)
 ```bash
