@@ -1,4 +1,4 @@
-# solr-docker-psy
+# solr-docker-example
 ### Install docker
 ```bash
 $ /bin/sh <(curl -sSLf https://get.docker.com/)
@@ -14,8 +14,8 @@ $ usermod -aG docker <username>
 
 ### Clone repository
 ```bash
-$ git clone https://github.com/eikaas/solr-docker-psy
-$ cd solr-docker-psy/
+$ git clone https://github.com/eikaas/solr-docker-example
+$ cd solr-docker-example
 ```
 
 ### Review the .env environment file
